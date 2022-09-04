@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Style sheet link-->
+<link rel="stylesheet" href="styles.css">
+
+<!--Head tag--------------------------->
+  <head>
+        <h1 class="title">Framingham Risk Score Test</h1>
+  </head>
+  <!--Body Tag------------------------->
+  <body>
+
+          <div class="row">
+                <div class="img">
+                    <img class="heartcartoon" src="Images/Heart.jpg" alt="heartcartoon">
+                </div>
+                <div class="inputButtons">
+                    <form class="inputSection">
+                      <h3>Framingham Risk Score for Hard Coronary Heart Disease</h3>
+                      <!--Age input-->
+                        <label for="age">Age:</label><br>
+                        <input type="number" id="ageInput" name="age"><br>
+                        <hr align="center" width="50%">
+
+                      <!--Gender input-->
+                        <h2>Gender</h2>
+                        <input type="checkbox" id="maleInput" name="male">
+                        <label for="male">Male</label><br>
+                        <input type="checkbox" id="femaleInput" name="female">
+                        <label for="female">Female</label><br>
+                        <hr align="center" width="50%">
+
+                      <!--hdl cholestrol input-->
+                        <label for="hdl">HDL Cholestrol (mg/dl):</label><br>
+                        <input type="number" id="hdlInput" name="hdl"><br>
+                        <hr align="center" width="50%">
+
+                      <!--Total Cholestrol input-->
+                        <label for="cholestrol">Total Cholesterol (mg/dl):</label><br>
+                        <input type="number" id="cholestrolInput" name="cholestrol"><br>
+                        <hr align="center" width="50%">
+
+                      <!--Systolic blood pressure input-->
+                        <label for="blood">Systolic Blood Pressure:</label><br>
+                        <input type="number" id="bloodInput" name="blood"><br>
+                        <hr align="center" width="50%">
+
+                      <!--Treated or untreaded-->
+                      <label for="treatedOrNot">Blood pressure being treated with medicines:</label><br>
+                      <input type="checkbox" id="treatedInput" name="treated">
+                      <label for="treated">Treated</label><br>
+                      <input type="checkbox" id="untreadedInput" name="untreaded">
+                      <label for="Untreaded">Untreaded</label><br>
+                      <hr align="center" width="50%">
+
+                      <!--Smoker-->
+                        <h2>Smoker</h2>
+                        <input type="checkbox" id="yesInput" name="yes">
+                        <label for="yes">Yes</label><br>
+                        <input type="checkbox" id="noInput" name="no">
+                        <label for="no">No</label><br>
+                        <hr align="center" width="50%">
+
+                        <!--Enter button-->
+                        <button id="enter" class="enterButton" onclick="results()">
+                          <span>Enter</span><br>
+                        </button>
+
+                        <!--javascript link-->
+                        <script type="text/javascript" src="javascript.js">
+                        </script>
+                      <!--Results output-->
+                        <script>
+                          document.write("Your risk percentage is: " + finalOutput);
+                        </script>
+                    </form>
+                </div>
+              </div>
+          </div>
+
+
+  </body>
+</html>
